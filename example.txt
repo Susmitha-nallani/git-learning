@@ -1,0 +1,58 @@
+This is the example for git learning.
+
+1>Git init --> for initialize the git repository.
+
+
+2>Working Repository===>((Git status)):For show the status of the git branch status.
+
+===Before no file present in the project showing status like this 
+C:\Users\DELL\Desktop\GitLe>git status
+On branch master
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+
+====>for example to create the empty file like(.txt) in the project show like this 
+
+C:\Users\DELL\Desktop\GitLe>git status
+On branch master
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+3> Staging Repository((git add)) ===>In Working Repository to statging we can sending 
+single single files.But in local and remote we can't send single file.
+
+but in this we can send single file also like example.txt.
+
+Example===> 
+C:\Users\DELL\Desktop\GitLe>git add code.py
+C:\Users\DELL\Desktop\GitLe>git status
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   code.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.txt
+
+
+===> Now we can see that no code.py showing in the tracking directory.
+
+
+4>Local Repository((Git Commit)) ===> For sending the  files in local we can use commit Command.
+We are not single file commit,But we can commit specific area files we can commit
+in local repostory.
+Examples====>I have  example.txt and code.py  files.
+ I cannot commit only single  like (code .py)
+
+5> Remote Repository((Git Push)) ===> For sending the file or files in remote we can use Push Command.
+
+
+
+
