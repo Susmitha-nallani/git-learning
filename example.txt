@@ -50,8 +50,66 @@ We are not single file commit,But we can commit specific area files we can commi
 in local repostory.
 Examples====>I have  example.txt and code.py  files.
  I cannot commit only single  like (code .py)
+ 
+Example ===> C:\Users\DELL\Desktop\GitLe>git commit -m  "Commiting code and examplefiles"
+[master (root-commit) 5167091] Commiting code and examplefiles
+ 2 files changed, 59 insertions(+)
+ create mode 100644 code.py
+ create mode 100644 example.txt
 
 5> Remote Repository((Git Push)) ===> For sending the file or files in remote we can use Push Command.
+
+We are just adding remote origin from local to remote ,Use below command.
+(first you need to create onre repository in the github,And after creating the repository showing origin likebelow command)
+
+C:\Users\DELL\Desktop\GitLe>git remote add origin https://github.com/Susmitha-nallani/git-learning.git
+
+
+****After you sending the data in the origin repository we can push overall data in the git push to remote.
+
+Example====> 
+
+C:\Users\DELL\Desktop\GitLe>git push -u origin master  (****here master is the Branch name)
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 961 bytes | 320.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Susmitha-nallani/git-learning.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+======> After Pushing the data WE CAN REFRESH THE PAGE IN TH GIT HUB SHOW THAT FILES SHOWING OR NOT IN THE GIT.
+
+
+
+
+FOR  CREATING BRANCHES 
+=====================
+
+We can use command for creating branches (-b for creating new branch if you dont give -b you can jump another branch)
+===> git checkout for jumping the Branches.(In this case we cannot give -b)
+===> git checkout -b "uou can give here branch name"
+
+
+Example==== > git checkout -b "copy1"
+
+C:\Users\DELL\Desktop\GitLe>git checkout -b "copy1"
+Switched to a new branch 'copy1'
+
+
+=====> Here we can see how many branches are presentusing git branch command.
+
+
+Example===>  git branch
+
+C:\Users\DELL\Desktop\GitLe>git branch
+* copy1
+  master
+
+
 
 
 
